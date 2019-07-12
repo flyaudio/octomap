@@ -113,7 +113,7 @@ int main(int argc, char** argv){
 
   try{
     MapSaver ms(mapFilename, fullmap);
-  }catch(std::runtime_error& e){
+  }catch(std::runtime_error& e){//运行时错误异常类
     ROS_ERROR("octomap_saver exception: %s", e.what());
     exit(2);
   }
